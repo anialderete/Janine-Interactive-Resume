@@ -520,19 +520,83 @@ section .title::after{
   background: none;
 }
 /* footer section styling */
-footer{
-    background: linear-gradient(to right, #4e2451, #DCCDDD);
-    padding: 15px 23px;
-    color: #fff;
-    text-align: center;
+footer {
+  background: linear-gradient(to right, #4e2451, #DCCDDD);
+  padding: 20px 15px;
+  color: #fff;
+  text-align: center;
 }
-footer span a{
-    color: white;
-    text-decoration: none;
+
+footer span a {
+  color: white;
+  text-decoration: none;
 }
-footer span a:hover{
-    text-decoration: underline;
+
+footer span a:hover {
+  text-decoration: underline;
 }
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* stack text and icons vertically */
+  align-items: center;    /* center horizontally */
+  gap: 15px;              /* spacing between text and icons */
+}
+
+.footer-text {
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-text a {
+  color: #fff;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;        /* wrap icons on smaller screens */
+  justify-content: center; /* center icons horizontally */
+}
+
+.footer-link img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-link a {
+  opacity: 0.875;
+  transition: 225ms ease-in opacity;
+}
+
+.footer-link a:hover {
+  opacity: 1;
+}
+
+body.dark .footer-link img {
+  filter: invert(1);
+}
+
+/* Responsive tweaks */
+@media (max-width: 500px) {
+  .footer-links {
+    gap: 10px;
+  }
+
+  .footer-link img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .footer-text {
+    font-size: 13px;
+  }
+}
+
+
 
 
 /* responsive media query start */
