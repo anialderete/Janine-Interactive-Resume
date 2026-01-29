@@ -519,7 +519,7 @@ section .title::after{
   color: #4e2451;
   background: none;
 }
-/* footer section styling */
+
 footer {
   background: linear-gradient(to right, #4e2451, #DCCDDD);
   padding: 20px 15px;
@@ -538,9 +538,9 @@ footer span a:hover {
 
 .footer-content {
   display: flex;
-  flex-direction: column; /* stack text and icons vertically */
-  align-items: center;    /* center horizontally */
-  gap: 15px;              /* spacing between text and icons */
+  flex-direction: column; 
+  align-items: center;    
+  gap: 15px;              
 }
 
 .footer-text {
@@ -558,8 +558,8 @@ footer span a:hover {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  flex-wrap: wrap;        /* wrap icons on smaller screens */
-  justify-content: center; /* center icons horizontally */
+  flex-wrap: wrap;        
+  justify-content: center; 
 }
 
 .footer-link img {
@@ -913,5 +913,3 @@ body.dark .footer-link img {
     font-weight: 600;
     text-align: center;
 }
-
-
